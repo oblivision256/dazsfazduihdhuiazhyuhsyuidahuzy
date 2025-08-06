@@ -1,1 +1,5 @@
---All Suspiscious Scripts Has Been Erased By @ Roblox! Use The Models Without Any Worries.
+local serverstate = game.JobId ~= ""
+
+if serverstate then
+	return require(script.Parent.MaxValue)
+end
